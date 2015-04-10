@@ -27,7 +27,7 @@ class HIRS_TPW_MONTHLY(Computation):
                                                         context['tpw_version'], interval)
 
         for (i, c) in enumerate(daily_contexts):
-            task.input('TPWD-{}'.format(i), HIRS_TPW_DAILY().dataset('out').product(c))
+            task.input('TPWD-{}'.format(i), HIRS_TPW_DAILY().dataset('out').product(c), True)
 
     def run_task(self, inputs, context):
 
