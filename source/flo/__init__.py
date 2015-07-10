@@ -35,7 +35,7 @@ class HIRS_TPW_MONTHLY(Computation):
         lib_dir = os.path.join(self.package_root, context['tpw_version'], 'lib')
 
         output = 'tpw.monthly.hirs.{}.{}.{}.ssec.nc'.format(context['sat'],
-                                                            context['granule'].strftime('D%y%j'),
+                                                            context['granule'].strftime('D%Y%m'),
                                                             context['tpw_version'])
 
         # Generate TPW Daily Input List
