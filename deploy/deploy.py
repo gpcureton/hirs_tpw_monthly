@@ -9,7 +9,7 @@ class HIRS_TPW_MONTHLY_Package(Package):
 
     def deploy_package(self):
 
-        for version in ['v20150915']:
+        for version in ['v20160114']:
             self.merge(Extracted('HIRS_TPW_Monthly_{}.tar.gz'.format(version)).path(),
                        version)
             self.merge(NetcdfFortran().path(), version)
