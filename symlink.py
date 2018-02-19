@@ -7,7 +7,7 @@ from flo.sw.hirs_tpw_monthly import HIRS_TPW_MONTHLY
 
 # every module should have a LOG object
 import logging, traceback
-LOG = logging.getLogger(__file__)
+LOG = logging.getLogger(__name__)
 
 
 def symlink(c, output, contexts):

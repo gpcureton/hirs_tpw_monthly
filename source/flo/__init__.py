@@ -9,7 +9,7 @@ from flo.sw.hirs_tpw_daily import HIRS_TPW_DAILY
 
 # every module should have a LOG object
 import logging, traceback
-LOG = logging.getLogger(__file__)
+LOG = logging.getLogger(__name__)
 
 
 class HIRS_TPW_MONTHLY(Computation):
